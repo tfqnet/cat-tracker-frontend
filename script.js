@@ -4,7 +4,7 @@ async function sendLocation(position) {
     const timestamp = new Date().toISOString();
   
     const body = {
-      catId: "garfield", // You can make this dynamic later
+      catId: catId, 
       latitude: lat,
       longitude: lon,
       timestamp: timestamp
