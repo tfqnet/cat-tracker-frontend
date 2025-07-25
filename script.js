@@ -21,6 +21,7 @@ async function sendLocation(position) {
   
       if (res.ok) {
         document.getElementById("status").textContent = "📍 Location sent successfully. Thanks!";
+        document.getElementById("retry-btn").style.display = "none";
       } else {
         document.getElementById("status").textContent = "❌ Failed to send location.";
       }
@@ -29,6 +30,7 @@ async function sendLocation(position) {
       document.getElementById("status").textContent = "⚠️ Error sending location.";
     }
   }
+ 
   
   function getLocation() {
     if (!navigator.geolocation) {
@@ -38,12 +40,19 @@ async function sendLocation(position) {
   
     navigator.geolocation.getCurrentPosition(
       sendLocation,
-      () => {
-        document.getElementById("status").textContent = "Permission denied or failed to get location.";
+      (error) => {
+        console.warn(error);
+        if (error.code === 1) {
+          document.getElementById("status").textContent = "Location access denied. Tap Retry to try again.";
+        } else {
+          document.getElementById("status").textContent = "Failed to get location. Tap Retry to try again.";
+        }
+        document.getElementById("retry-btn").style.display = "inline-block";
       },
       { timeout: 10000 }
     );
   }
+  
   
   getLocation();
   
