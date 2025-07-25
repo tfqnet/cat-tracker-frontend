@@ -23,7 +23,7 @@
   <div class="status" id="status">Getting your location...</div>
   <button id="retry-btn" style="display:none;" onclick="location.reload()">📍 Retry Location</button>
 
-  <div id="contact">
+  <!-- <div id="contact">
     <h3>🐱 Want to help?</h3>
     <a
       href="https://wa.me/60192166699?text=Hi%2C%20I%20found%20your%20cat!"
@@ -39,7 +39,16 @@
     >
       💬 Message via Telegram
     </a>
-  </div>
+  </div> -->
+
+  <h2 id="cat-name"></h2>
+<img id="cat-photo" style="max-width: 200px;" />
+<p id="cat-description"></p>
+
+<a id="wa-btn" class="btn">📲 WhatsApp Owner</a>
+<a id="tg-btn" class="btn">💬 Telegram Owner</a>
+
   <script src="script.js"></script>
+  <script src="index.js"></script>
 </body>
 </html>
