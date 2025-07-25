@@ -40,7 +40,7 @@ const cats = {
 // Your contact info (shared for all cats)
 const contact = {
   whatsapp: "60192166699", // your phone number
-  telegram: "telegram" // without @
+  telegram: "tfqnet" // without @
 };
 
 // Get catId from URL
