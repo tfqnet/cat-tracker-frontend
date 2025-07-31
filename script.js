@@ -37,29 +37,30 @@ async function sendLocation(position) {
  
   
   function getLocation() {
-    if (!navigator.geolocation) {
-      document.getElementById("status").textContent = "Geolocation not supported.";
-      return;
-    }
-  
-      // Show loading while getting location
-  statusEl.textContent = "⏳ Sending location...";
-  retryBtn.style.display = "none";
-
-    navigator.geolocation.getCurrentPosition(
-      sendLocation,
-      (error) => {
-        console.warn(error);
-        if (error.code === 1) {
-          document.getElementById("status").textContent = "Location access denied. Tap Retry to try again.";
-        } else {
-          document.getElementById("status").textContent = "Failed to get location. Tap Retry to try again.";
-        }
-        document.getElementById("retry-btn").style.display = "inline-block";
-      },
-      { timeout: 10000 }
-    );
+  if (!navigator.geolocation) {
+    document.getElementById("status").textContent = "Geolocation not supported.";
+    return;
   }
+
+  // ✅ Corrected: Show loading while getting location
+  document.getElementById("status").textContent = "📍 Getting your location...";
+  document.getElementById("retry-btn").style.display = "none";
+
+  navigator.geolocation.getCurrentPosition(
+    sendLocation,
+    (error) => {
+      console.warn(error);
+      if (error.code === 1) {
+        document.getElementById("status").textContent = "Location access denied. Tap Retry to try again.";
+      } else {
+        document.getElementById("status").textContent = "Failed to get location. Tap Retry to try again.";
+      }
+      document.getElementById("retry-btn").style.display = "inline-block";
+    },
+    { timeout: 10000 }
+  );
+}
+
   
   
   getLocation();
