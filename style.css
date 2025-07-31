@@ -1,18 +1,79 @@
-.contact-button {
-    display: inline-block;
-    margin: 10px;
-    padding: 12px 20px;
-    border-radius: 8px;
-    font-weight: bold;
-    text-decoration: none;
-    color: white;
-  }
-  
-  .whatsapp {
-    background-color: #25d366;
-  }
-  
-  .telegram {
-    background-color: #0088cc;
-  }
-  
+/* Base body styling */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* Container & card layout */
+.container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 16px;
+  text-align: center;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Cat image styling */
+#cat-photo {
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #eee;
+  margin-bottom: 16px;
+}
+
+/* Status & Retry */
+#status {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+#retry-btn {
+  margin-top: 10px;
+  padding: 8px 12px;
+  background: #ffcc00;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Buttons shared styling */
+.contact-button,
+.contact-buttons a {
+  display: inline-block;
+  margin: 10px;
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+}
+
+/* WhatsApp & Telegram colors */
+.whatsapp,
+#wa-btn {
+  background-color: #25d366;
+}
+
+.telegram,
+#tg-btn {
+  background-color: #0088cc;
+}
+
+/* Typography */
+h2, p {
+  margin-bottom: 8px;
+}
