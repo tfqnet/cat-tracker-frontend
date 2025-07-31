@@ -7,7 +7,7 @@ const cats = {
   },
   luna: {
     name: "Luna",
-    photo: "luna.png",
+    photo: "https://tfqnet.github.io/cat-tracker-frontend/images/luna.png",
     description: "Grey fur with green eyes. Shy and sweet."
   },
   momo: {
