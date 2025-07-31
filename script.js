@@ -42,6 +42,10 @@ async function sendLocation(position) {
       return;
     }
   
+      // Show loading while getting location
+  statusEl.textContent = "⏳ Sending location...";
+  retryBtn.style.display = "none";
+
     navigator.geolocation.getCurrentPosition(
       sendLocation,
       (error) => {

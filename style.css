@@ -77,3 +77,9 @@ body {
 h2, p {
   margin-bottom: 8px;
 }
+#status {
+  margin-top: 10px;
+  font-size: 14px;
+  min-height: 24px;
+  color: #555;
+}
