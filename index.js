@@ -2,12 +2,12 @@
 const cats = {
   garfield: {
     name: "Garfield",
-    photo: "https://tfqnet.github.io/cat-tracker-frontend/images/garfield.jpg",
+    photo: "https://tfqnet.github.io/cat-tracker-frontend/images/garfield.png",
     description: "Orange tabby, loves lasagna. Friendly but lazy."
   },
   luna: {
     name: "Luna",
-    photo: "luna.jpg",
+    photo: "luna.png",
     description: "Grey fur with green eyes. Shy and sweet."
   },
   momo: {
