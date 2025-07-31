@@ -11,8 +11,8 @@ async function sendLocation(position) {
     };
   
       // Show loading
-  document.getElementById("status").textContent = "📡 Sending location...";
-  document.getElementById("retry-btn").style.display = "none";
+    document.getElementById("status").textContent = "📡 Sending location...";
+    document.getElementById("retry-btn").style.display = "none";
 
     try {
       const res = await fetch("https://cat-tracker-backend.onrender.com/report-location", {
