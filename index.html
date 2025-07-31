@@ -8,22 +8,25 @@
 </head>
 
 <body>
- <div class="container">
-  <div class="card">
-    <img id="cat-photo" src="" alt="Cat Photo" />
-    <h2 id="cat-name">Loading...</h2>
-    <p id="cat-description"></p>
-    <div class="contact-buttons">
-      <a id="wa-btn" class="contact-button whatsapp" href="#" target="_blank">📱 WhatsApp</a>
-      <a id="tg-btn" class="contact-button telegram" href="#" target="_blank">💬 Telegram</a>
-    </div>
-    <p id="status">📍 Getting your location...</p>
-    <button id="retry-btn" style="display: none;">🔄 Retry</button>
-  </div>
-</div>
+  <div class="container">
+    <div class="card">
+      <img id="cat-photo" src="" alt="Cat Photo" />
 
+      <h2 id="cat-name">Loading...</h2>
+      <p id="cat-description"></p>
+
+      <div id="status">📍 Getting your location...</div>
+      <button id="retry-btn" onclick="getLocation()">🔄 Retry</button>
+
+      <div class="contact-buttons">
+        <a id="wa-btn" class="contact-button whatsapp" href="#" target="_blank">📱 WhatsApp</a>
+        <a id="tg-btn" class="contact-button telegram" href="#" target="_blank">💬 Telegram</a>
+      </div>
+    </div>
+  </div>
 
   <script src="script.js"></script>
   <script src="index.js"></script>
 </body>
+
 </html>

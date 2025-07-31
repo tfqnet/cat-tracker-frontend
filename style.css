@@ -83,3 +83,46 @@ h2, p {
   min-height: 24px;
   color: #555;
 }
+
+@media (max-width: 480px) {
+  .container {
+    padding: 12px;
+  }
+
+  #cat-photo {
+    width: 120px;
+    height: 120px;
+  }
+
+  h2 {
+    font-size: 22px;
+  }
+
+  p, #status {
+    font-size: 15px;
+  }
+
+  .contact-buttons a {
+    padding: 8px 14px;
+    font-size: 14px;
+  }
+}
+
+#status {
+  margin: 12px 0;
+  font-size: 14px;
+  color: #444;
+}
+
+#retry-btn {
+  display: none;
+  margin-top: 12px;
+  padding: 8px 14px;
+  background-color: #ffcc00;
+  color: #333;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
