@@ -2,7 +2,7 @@
 const cats = {
   garfield: {
     name: "Garfield",
-    photo: "garfield.jpg",
+    photo: "images/garfield.jpg",
     description: "Orange tabby, loves lasagna. Friendly but lazy."
   },
   luna: {
@@ -12,17 +12,17 @@ const cats = {
   },
   momo: {
     name: "Momo",
-    photo: "momo.jpg",
+    photo: "images/momo.jpg",
     description: "Black and white fur. Very playful and energetic."
   },
   bella: {
     name: "Bella",
-    photo: "bella.jpg",
+    photo: "images/bella.jpg",
     description: "Calico cat. Loves to cuddle and meow a lot."
   },
   leo: {
     name: "Leo",
-    photo: "leo.jpg",
+    photo: "images/leo.jpg",
     description: "Striped tabby. Adventurous and brave."
   },
   coco: {
@@ -32,7 +32,7 @@ const cats = {
   },
   milo: {
     name: "Milo",
-    photo: "milo.jpg",
+    photo: "images/milo.jpg",
     description: "Young kitten. Loves chasing things."
   }
 };
